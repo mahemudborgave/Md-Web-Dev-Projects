@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>xCalculator</title>
+</head>
+
+<body>
+    <div class="head-section">
+        <div class="container">
+            <header>
+                <img src="./images/logo.png" alt="">
+                <ul>
+                    <li class="active"><a href="index.html">News</a></li>
+                    <li><a href="currency_converter.html">Exchange</a></li>
+                    <li><a href="">Coming</a></li>
+                    <li><a href="">Coming</a></li>
+                    <li><a href="">Coming</a></li>
+                </ul>
+                <div class="login-signup">
+                    <a href="#">Login</a>
+                    <a class="singup-button" href="#">Sign Up</a>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="currency-section">
+        <div class="container">
+            <div class="currency-wrapper">
+                <p><span class="material-symbols-outlined">
+                        currency_exchange
+                    </span>Currency Converter</p>
+                <div class="amount-from-to">
+                    <div class="amount">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" name="amount" placeholder="0.00">
+                    </div>
+                    <div class="from">
+                        <label for="from">From</label>
+                        <div class="flag-cntry">
+                            <img src="" alt="fromCountryImg">
+                            <select name="from" id="from">
+                            </select>
+                        </div>
+                    </div>
+                    <span class="exchange material-symbols-outlined">
+                        compare_arrows
+                    </span>
+                    <div class="to">
+                        <label for="to">To</label>
+                        <div class="flag-cntry">
+                            <img src="" alt="toCountryImg">
+                            <select name="to" id="to">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="convert" type="submit">Convert</button>
+                <p class="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

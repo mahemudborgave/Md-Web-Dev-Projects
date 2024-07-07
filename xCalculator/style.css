@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --blue: #2D033B; */
+    --blue: #7D0633;
+    --secCol: #F2A07B;
+    --border: rgb(193, 193, 193);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.head-section {
+    background-color: var(--blue);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    height: 12vh;
+    padding: 1em;
+}
+
+header img {
+    height: 100%;
+    cursor: pointer;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+}
+
+header ul li a,
+.login-signup a {
+    text-decoration: none;
+    color: white;
+    padding: .5em 1em;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+
+header ul li a:hover,
+.login-signup a:hover {
+    background-color: #f2a17b7b;
+}
+
+.login-signup .singup-button {
+    background-color: var(--secCol);
+}
+
+.login-signup .singup-button:hover {
+    background-color: #f2a17b84;
+}
+
+.home-img {
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.home-img img {
+    display: block;
+    height: 100%;
+    margin: auto;
+    /* border-radius: 20px; */
+}
+
+
+
+
+/* Currency Page */
+
+
+
+.currency-wrapper {
+    margin-top: 3em;
+    /* border: 5px solid red; */
+    font-size: 1.7rem;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #cbcccd;
+}
+
+.currency-wrapper>* {
+    margin-bottom: 1em;
+}
+
+.currency-wrapper p:first-child {
+    font-size: 2rem;
+    padding: .7em;
+    font-weight: 500;
+    color: var(--secCol);
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.currency-wrapper p:first-child span {
+    margin-right: .4em;
+}
+
+.amount-from-to {
+    /* border: 2px solid green; */
+    display: flex;
+
+    /* justify-content: space-between; */
+}
+
+.amount-from-to>* {
+    /* border: 5px solid red; */
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.amount-from-to label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.amount-from-to input,
+.amount-from-to select {
+    display: inline-block;
+    font-size: 1.7rem;
+    width: 100%;
+    color: #595959;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    outline: none;
+    padding: 0.6em;
+}
+
+.amount-from-to select {
+    border: none;
+}
+
+.amount-from-to .exchange {
+    align-self: flex-end;
+    padding: .5em;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--secCol);
+    flex-grow: 0;
+}
+
+.currency-wrapper .convert {
+    font-size: 1.7rem;
+    background-color: var(--secCol);
+    padding: .5em 1em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.currency-wrapper p.result {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.flag-cntry {
+    display: flex;
+    border: 1px solid var(--border);
+    padding: 0 7px;
+    border-radius: 5px;
+}
+
+.flag-cntry img {
+    height: 45px;
+}
+
+
+
+
+
+
+/* News Section */
+
+
+
+
+
+
+.news-wrapper {
+    margin: 50px 0 50px;
+    padding: 30px;
+    /* border: 1px solid var(--border) */
+}
+
+.news-wrapper>p:first-child {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: var(--secCol);
+}
+
+.news {
+    font-size: 1.7rem;
+    display: grid;
+    gap: 1.5em 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.news-card {
+    /* border: 1px solid var(--border); */
+    box-shadow: 0 0 10px 1px #ededed;
+}
+
+.news-card>* {
+    padding: 1em;
+}
+
+.news-card .nh {
+    border-left: 3px solid var(--blue);
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #f2a17b27;
+    color: #3a3a3a;
+}
+
+.news-card .detail {
+    text-align: justify;
+    color: #545454;
+    /* background-color: #f8f8f885; */
+}
